@@ -1,13 +1,13 @@
 # App-Otomasyon
 Reeve Application - Muhtarlik Uygulamasi
 
-Kullanici Adi(username) = admin
+Muhtarlık Otomasyonu C# dilinde, SQL ve Visual Studio programları kullanılarak
+geliştirilmiştir. Otomasyon uygulamasının SQL veri tabanı ile bağlantısı, Visual
+Studio ve Adobe Photoshop yardımıyla yapılan tasarımı ile birlikte kullanıma hazır.
 
-sifre(pass) = 12345
-/////////////////////////////////////
+Muhtarlık Otomasyonu mahalle veya köylerde bulunan kişilerin bilgi takibini,
+kişilerin istekleri üzerine resmi belgelerinin alınabileceğini, muhtarların mail yoluyla
+mahalle veya köydeki kişilere erişebilmesini ve aynı zamanada uygulamayı istedikleri
+şekilde biçimlendirebilmesini sağlamaktadır.
 
-Mail 
-
-mahallemuhtari2019@gmail.com
-
-sifre(pass) = muhtar.2019
+Contact (İletisim) = cengiz69mg@gmail.com 
