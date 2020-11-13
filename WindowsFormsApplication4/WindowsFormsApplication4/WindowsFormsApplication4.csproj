@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFF74C76-FB59-4208-818E-B674F71A51E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication4</RootNamespace>
+    <AssemblyName>WindowsFormsApplication4</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <Prefer32Bit>true</Prefer32Bit>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="evci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="evci.Designer.cs">
+      <DependentUpon>evci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fakirlik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fakirlik.Designer.cs">
+      <DependentUpon>fakirlik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="help.Designer.cs">
+      <DependentUpon>help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iyidurum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iyidurum.Designer.cs">
+      <DependentUpon>iyidurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kayitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kayitDataSetson.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kayitDataSetson.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MailIslemleri.cs" />
+    <Compile Include="meden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meden.Designer.cs">
+      <DependentUpon>meden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nakil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nakil.Designer.cs">
+      <DependentUpon>nakil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nform5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nform5.Designer.cs">
+      <DependentUpon>nform5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nufuskayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nufuskayıt.Designer.cs">
+      <DependentUpon>nufuskayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="olum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="olum.Designer.cs">
+      <DependentUpon>olum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sagdul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sagdul.Designer.cs">
+      <DependentUpon>sagdul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yokluk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yokluk.Designer.cs">
+      <DependentUpon>yokluk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zayi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zayi.Designer.cs">
+      <DependentUpon>zayi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="evci.resx">
+      <DependentUpon>evci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fakirlik.resx">
+      <DependentUpon>fakirlik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="help.resx">
+      <DependentUpon>help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iyidurum.resx">
+      <DependentUpon>iyidurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meden.resx">
+      <DependentUpon>meden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nakil.resx">
+      <DependentUpon>nakil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nform5.resx">
+      <DependentUpon>nform5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nufuskayıt.resx">
+      <DependentUpon>nufuskayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="olum.resx">
+      <DependentUpon>olum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sagdul.resx">
+      <DependentUpon>sagdul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yokluk.resx">
+      <DependentUpon>yokluk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zayi.resx">
+      <DependentUpon>zayi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="kayitDataSet.xsc">
+      <DependentUpon>kayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kayitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kayitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kayitDataSet.xss">
+      <DependentUpon>kayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kayitDataSetson.xsc">
+      <DependentUpon>kayitDataSetson.xsd</DependentUpon>
+    </None>
+    <None Include="kayitDataSetson.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kayitDataSetson.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kayitDataSetson.xss">
+      <DependentUpon>kayitDataSetson.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\login_password_298565.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\gin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\index.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\login-Kurtarıldı.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\Başlıksız-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\kytson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question-Mark-PNG-Transparent-Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-business-male-icon-vector-png-image_916468.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\su.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\su.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\ikametgah belgesi ornegi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\login - Kopya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\index2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\admin-icon-0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikametgah belgesi ornegi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\logs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\kalın.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\ita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\un.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\uns.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\wrong-295503_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\align-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\align-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\align-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\logson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ımg\logson2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong-295503_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align-left.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

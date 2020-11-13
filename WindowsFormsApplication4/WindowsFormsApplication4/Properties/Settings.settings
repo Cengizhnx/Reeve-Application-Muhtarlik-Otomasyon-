@@ -1,0 +1,53 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsFormsApplication4.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="kayitConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=LAPTOP-KBMKH7SD\SQLEXPRESS;Initial Catalog=kayit;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=LAPTOP-KBMKH7SD\SQLEXPRESS;Initial Catalog=kayit;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="panel" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">8, 28, 65</Value>
+    </Setting>
+    <Setting Name="form" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Control</Value>
+    </Setting>
+    <Setting Name="label" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Garamond, 11.25pt</Value>
+    </Setting>
+    <Setting Name="textbox" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="EmailAdress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EmailHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="EmailPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SelectedMailIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="linkLabel2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">8, 28, 65</Value>
+    </Setting>
+    <Setting Name="linkLabel3" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">8, 28, 65</Value>
+    </Setting>
+    <Setting Name="lbl" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Leelawadee, 11.25pt</Value>
+    </Setting>
+    <Setting Name="lbl2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="hkk" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Leelawadee, 9pt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

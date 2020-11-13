@@ -1,0 +1,84 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Printing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication4
+{
+    public partial class nform5 : Form
+    {
+        public nform5()
+        {
+            InitializeComponent();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            PrintDialog pd = new PrintDialog();
+            PrintDocument doc = new PrintDocument();
+            doc.PrintPage += Doc_PrintPage;
+            pd.Document = doc;
+            if (pd.ShowDialog() == DialogResult.OK)
+                doc.Print();
+            this.Hide();
+        }
+        private void Doc_PrintPage(object sender, PrintPageEventArgs e)
+        {
+
+            Bitmap bm = new Bitmap(this.groupBox1.Width, this.groupBox1.Height);
+            this.groupBox1.DrawToBitmap(bm, new Rectangle(0, 0, this.groupBox1.Width, this.groupBox1.Height));
+            e.Graphics.DrawImage(bm, 0, 0);
+            bm.Dispose();
+        }
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
