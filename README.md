@@ -1,4 +1,4 @@
-# App-Otomasyon
+# Reeve Application - Muhtarlik Uygulamasi
 Reeve Application - Muhtarlik Uygulamasi
 
 Muhtarlık Otomasyonu C# dilinde, SQL ve Visual Studio programları kullanılarak
